@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1100px;
+    overflow: auto;
+}
+
+$spaceamong: (1,2,3,4,5);
+@each $space in $spaceamong {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
